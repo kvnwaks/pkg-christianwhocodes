@@ -40,16 +40,24 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' }}
         shell: bash
         run: |
-          TAG="$(python - <<'PY'
+          VERSION="$(python - <<'PY'
           import tomllib
           from pathlib import Path
 
           with Path("pyproject.toml").open("rb") as f:
               data = tomllib.load(f)
 
-          print(f"v{data['project']['version']}")
+          print(data['project']['version'])
           PY
           )"
+
+          TAG="v$VERSION"
+
+          if [[ "$VERSION" == *".dev"* ]]; then
+            echo "Error: Refusing manual publish for development version '$VERSION'."
+            echo "Bump to a stable version before dispatching this workflow."
+            exit 1
+          fi
 
           echo "Resolved version tag: $TAG"
 
