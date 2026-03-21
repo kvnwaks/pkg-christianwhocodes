@@ -6,7 +6,7 @@ Issues = "https://github.com/treeolivetech/pkg-christianwhocodes/issues"
 
 [project]
 name = "christianwhocodes"
-version = "1.5.4.dev2"
+version = "1.5.4"
 description = "Utilities for developers."
 readme = "README.md"
 license = "MIT"
@@ -23,7 +23,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-scripts = { christianwhocodes = "christianwhocodes.cli:main" }
+scripts = { christianwhocodes = "christianwhocodes.cli:main", cwc = "christianwhocodes.cli:main" }
 dependencies = ["pyperclip==1.11.0", "rich==14.3.3"]
 
 [dependency-groups]

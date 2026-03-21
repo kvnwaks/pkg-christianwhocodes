@@ -15,7 +15,7 @@ _platform_cmd = PlatformCommand()
 
 def handle_default(args: Namespace) -> ExitCode:
     """Handle default command when no subcommand is specified."""
-    cprint("...but the people who know their God shall be strong... — Daniel 11:32")
+    cprint("...but the people who know their God shall be strong and do exploits. — Daniel 11:32")
     return ExitCode.SUCCESS
 
 
