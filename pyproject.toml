@@ -6,7 +6,7 @@ Issues = "https://github.com/treeolivetech/pkg-christianwhocodes/issues"
 
 [project]
 name = "christianwhocodes"
-version = "1.5.4"
+version = "1.5.5"
 description = "Utilities for developers."
 readme = "README.md"
 license = "MIT"
@@ -27,10 +27,10 @@ scripts = { christianwhocodes = "christianwhocodes.cli:main", cwc = "christianwh
 dependencies = ["pyperclip==1.11.0", "rich==14.3.3"]
 
 [dependency-groups]
-dev = ["ruff>=0.15.7", "ty>=0.0.24"]
+dev = ["ruff>=0.15.9", "ty>=0.0.28"]
 
 [build-system]
-requires = ["uv_build>=0.11.0,<0.12.0"]
+requires = ["uv_build>=0.11.3,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.ruff]
