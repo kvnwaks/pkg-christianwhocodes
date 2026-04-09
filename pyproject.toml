@@ -6,18 +6,17 @@ Issues = "https://github.com/treeolivetech/pkg-christianwhocodes/issues"
 
 [project]
 name = "christianwhocodes"
-version = "1.5.5"
+version = "1.5.6.dev1"
 description = "Utilities for developers."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Treeolive Technologies", email = "hi@treeolive.tech" }]
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Operating System :: OS Independent",
@@ -27,10 +26,10 @@ scripts = { christianwhocodes = "christianwhocodes.cli:main", cwc = "christianwh
 dependencies = ["pyperclip==1.11.0", "rich==14.3.3"]
 
 [dependency-groups]
-dev = ["ruff>=0.15.9", "ty>=0.0.28"]
+dev = ["ruff>=0.15.10", "ty>=0.0.29"]
 
 [build-system]
-requires = ["uv_build>=0.11.3,<0.12.0"]
+requires = ["uv_build>=0.11.6,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.ruff]
