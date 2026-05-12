@@ -36,7 +36,7 @@ repos:
     rev: v3.8.3
     hooks:
       - id: prettier
-        types_or: [scss, css, javascript, json, yaml, markdown]
+        types_or: [scss, css, javascript, json, yaml]
         exclude: |
           (?x)^(
             .*/vendor/.*

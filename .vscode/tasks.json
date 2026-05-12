@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Convert Current Notebook to Markdown",
+      "type": "shell",
+      "command": "uv run python .vscode/scripts/convert_notebooks.py \"${file}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Convert Notebooks in Current Folder to Markdown",
+      "type": "shell",
+      "command": "uv run python .vscode/scripts/convert_notebooks.py \"${fileDirname}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": "build"
+    },
+    {
+      "label": "Convert All Notebooks in Workspace to Markdown",
+      "type": "shell",
+      "command": "uv run python .vscode/scripts/convert_notebooks.py \"${workspaceFolder}\" --recurse",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "group": "build"
+    }
+  ]
+}
