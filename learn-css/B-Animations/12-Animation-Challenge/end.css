@@ -1,0 +1,22 @@
+.box {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  border: 1px solid black;
+  /* Note: 6 animation properties, excluding animation-fill-mode */
+  animation: supersize 2s ease-out 0s 5 alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes supersize {
+  50% {
+    width: 20px;
+    height: 20px;
+    background: red;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    background: green;
+  }
+}

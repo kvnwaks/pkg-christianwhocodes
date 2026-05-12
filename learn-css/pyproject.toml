@@ -1,0 +1,11 @@
+[project]
+name = "learn-css"
+version = "1.0.0"
+description = "Learn CSS"
+readme = "README.md"
+authors = [{ name = "Kevin Wasike Wakhisi", email = "kevin@treeolive.tech" }]
+requires-python = ">=3.13"
+dependencies = ["jupyter==1.1.1"]
+
+# Pre-commit configuration
+[tool.ruff]

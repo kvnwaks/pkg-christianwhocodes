@@ -1,0 +1,11 @@
+.heading {
+  color: darkblue;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.heading:hover {
+  color: green;
+  font-size: 20px;
+  letter-spacing: 20px;
+}

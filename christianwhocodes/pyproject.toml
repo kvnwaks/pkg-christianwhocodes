@@ -1,0 +1,39 @@
+[build-system]
+requires = ["uv_build>=0.11.13,<0.12.0"]
+build-backend = "uv_build"
+
+[project.urls]
+# Homepage = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes"
+# Documentation = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes#readme"
+Repository = "https://github.com/treeolive-tech/learn.git"
+Issues = "https://github.com/treeolive-tech/learn/issues"
+
+[project]
+name = "christianwhocodes"
+version = "1.5.8"
+description = "Utilities for developers."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Kevin Wasike Wakhisi", email = "kevin@treeolive.tech" }]
+requires-python = ">=3.13"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+scripts = { christianwhocodes = "christianwhocodes.cli:main" }
+dependencies = ["pyperclip==1.11.0", "rich==15.0.0"]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+# Pre-commit configuration
+[tool.ruff]

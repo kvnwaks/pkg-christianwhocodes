@@ -1,0 +1,13 @@
+.heading {
+  color: darkblue;
+  font-size: 15px;
+  transition-property: font-size;
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.heading:hover {
+  color: red;
+  font-size: 25px;
+}
