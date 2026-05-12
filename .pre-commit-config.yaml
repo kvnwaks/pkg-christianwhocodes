@@ -1,29 +1,51 @@
 repos:
-  # 1. Non-Python formatting (Prettier) — before any linters read those files
-  # Prettier
-  - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.8.3
+  # Ensure lockfile is up-to-date
+  # uv
+  - repo: local
     hooks:
-      - id: prettier
-        types_or: [markdown]
+      - id: uv-lock-check
+        name: Check lockfile correctness with uv
+        entry: uv lock --check
+        language: system
+        pass_filenames: false
+        require_serial: true
 
-  # 2. Python formatting before linting — linter sees already-formatted code
+  # Python formatting before linting — linter sees already-formatted code
   # Ruff
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.11
+    rev: v0.15.12
     hooks:
       - id: ruff-format
       - id: ruff-check
         args: [--fix]
 
-  # 4. Type checking last — needs clean, linted code to be meaningful
+  # Type checking last — needs clean, linted code to be meaningful
   # ty : https://github.com/astral-sh/ty/issues/269
   - repo: local
     hooks:
       - id: ty-check
         name: ty check
         description: Type check with ty.
-        entry: uvx ty check
+        entry: uv run --locked ty check --exclude "learn-tool"
         language: system
         pass_filenames: false
         require_serial: true
+
+  # Prettier
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.8.3
+    hooks:
+      - id: prettier
+        types_or: [scss, css, javascript, json, yaml]
+        exclude: |
+          (?x)^(
+            .*/vendor/.*
+          )$
+
+  # Django template formatting then linting
+  # djLint: https://djlint.com/docs/integrations/#pre-commit
+  - repo: https://github.com/djlint/djLint
+    rev: v1.36.4
+    hooks:
+      - id: djlint-reformat
+      - id: djlint

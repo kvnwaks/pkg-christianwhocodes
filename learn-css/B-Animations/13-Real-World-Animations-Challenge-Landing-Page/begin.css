@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.image-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Sen;
+  text-align: center;
+}
