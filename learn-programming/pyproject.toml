@@ -1,12 +1,12 @@
 [project.urls]
-Homepage = "https://github.com/treeolive-tech/learn/tree/main/learn-css#readme"
-Repository = "https://github.com/treeolive-tech/learn/tree/main/learn-css.git"
+Homepage = "https://github.com/treeolive-tech/learn/tree/main/learn-programming#readme"
+Repository = "https://github.com/treeolive-tech/learn/tree/main/learn-programming.git"
 Issues = "https://github.com/treeolive-tech/learn/issues"
 
 [project]
-name = "learn-css"
+name = "learn-programming"
 version = "1.0.0"
-description = "Learn CSS"
+description = "Learn Programming"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

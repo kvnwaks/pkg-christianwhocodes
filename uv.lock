@@ -11,6 +11,7 @@ members = [
     "christianwhocodes",
     "learn-css",
     "learn-django",
+    "learn-programming",
     "learn-tool",
 ]
 
@@ -841,6 +842,17 @@ requires-dist = [{ name = "jupyter", specifier = "==1.1.1" }]
 name = "learn-django"
 version = "1.0.0"
 source = { virtual = "learn-django" }
+dependencies = [
+    { name = "jupyter" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "jupyter", specifier = "==1.1.1" }]
+
+[[package]]
+name = "learn-programming"
+version = "1.0.0"
+source = { virtual = "learn-programming" }
 dependencies = [
     { name = "jupyter" },
 ]

@@ -3,10 +3,10 @@ requires = ["uv_build>=0.11.13,<0.12.0"]
 build-backend = "uv_build"
 
 [project.urls]
-# Homepage = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes"
-# Documentation = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes#readme"
-Repository = "https://github.com/treeolive-tech/learn.git"
+Homepage = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes#readme"
+Repository = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes.git"
 Issues = "https://github.com/treeolive-tech/learn/issues"
+# Documentation = "https://github.com/treeolive-tech/learn/tree/main/christianwhocodes#readme"
 
 [project]
 name = "christianwhocodes"
