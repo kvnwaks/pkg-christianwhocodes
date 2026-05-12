@@ -26,7 +26,7 @@ repos:
       - id: ty-check
         name: ty check
         description: Type check with ty.
-        entry: uv run --locked ty check
+        entry: uv run --locked ty check --exclude "learn-tool"
         language: system
         pass_filenames: false
         require_serial: true

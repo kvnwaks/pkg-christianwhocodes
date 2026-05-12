@@ -11,7 +11,7 @@ members = [
     "christianwhocodes",
     "learn-css",
     "learn-django",
-    "learn-git",
+    "learn-tool",
 ]
 
 [manifest.dependency-groups]
@@ -849,9 +849,9 @@ dependencies = [
 requires-dist = [{ name = "jupyter", specifier = "==1.1.1" }]
 
 [[package]]
-name = "learn-git"
+name = "learn-tool"
 version = "1.0.0"
-source = { virtual = "learn-git" }
+source = { virtual = "learn-tool" }
 dependencies = [
     { name = "jupyter" },
 ]

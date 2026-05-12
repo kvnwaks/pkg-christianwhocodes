@@ -1,8 +1,10 @@
 [project]
-name = "learn-git"
+name = "learn-tool"
 version = "1.0.0"
-description = "Learn Git"
+description = "Learn Tools such as Git and more."
 readme = "README.md"
 authors = [{ name = "Kevin Wasike Wakhisi", email = "kevin@treeolive.tech" }]
 requires-python = ">=3.13"
 dependencies = ["jupyter==1.1.1"]
+
+# Pre-commit configuration

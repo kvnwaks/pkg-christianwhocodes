@@ -1,7 +1,7 @@
 [tool.uv.workspace]
 members = [
     "learn-programming",
-    "learn-git",
+    "learn-tool",
     "learn-css",
     "learn-django",
     "christianwhocodes",
