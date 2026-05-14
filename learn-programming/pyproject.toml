@@ -11,7 +11,7 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Kevin Wasike Wakhisi", email = "kevin@treeolive.tech" }]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = ["jupyter==1.1.1"]
 
 # Pre-commit configuration
